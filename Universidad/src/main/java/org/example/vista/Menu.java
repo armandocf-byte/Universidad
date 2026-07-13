@@ -120,7 +120,7 @@ public class Menu {
         System.out.println("Ingresa el numero de expediente del maestro que quieres buscar");
         maestro.setNumEmpleado(Integer.parseInt(leer.readLine()));
         ArrayList<Maestro> maestros_Lista = maestroDAO.buscarMae(maestro);
-        System.out.println("-------------- Lista de maestros --------------");
+        System.out.println("Maestro encontrado: ");
         for (Maestro maestro : maestros_Lista){
             System.out.println(maestro);
         }
